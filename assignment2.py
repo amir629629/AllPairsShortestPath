@@ -102,11 +102,6 @@ def FloydWarshall(G):
 				if pathPairs[i][j] > pathPairs[i][k] + pathPairs[k][j]:
 					pathPairs[i][j] = pathPairs[i][k] + pathPairs[k][j]
 
-  # convert back to integers
-  for a in range(len(pathPairs)):
-    for b in range(len(pathPairs)):
-      pathPairs[a][b] = int(pathPairs[a][b])
-
   return pathPairs
 
 def readFile(filename):
