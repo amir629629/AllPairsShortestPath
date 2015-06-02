@@ -54,9 +54,9 @@ def BellmanFord(G):
           pathPairs[index][edges[j][0][1]] = pathPairs[index][edges[j][0][0]] + int(edges[j][1])
 
   		# check for neg weight cycles
-      for j in range(len(edges)):
-        if pathPairs[index][edges[j][0][0]] + int(edges[j][1]) < pathPairs[index][edges[j][0][1]]:
-          print "Error: negative cycle found!", index
+      #for j in range(len(edges)):
+        #if pathPairs[index][edges[j][0][0]] + int(edges[j][1]) < pathPairs[index][edges[j][0][1]]:
+          #print "Error: negative cycle found!", index
 
   return pathPairs
 
