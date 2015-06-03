@@ -25,6 +25,7 @@ def BellmanFord(G):
 		#index += 1
   #print
 
+
 	# actual implimentation
   #--------------------------------------------------------------------------------
   # initialize graph
